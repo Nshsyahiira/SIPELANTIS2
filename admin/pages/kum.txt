@@ -1,0 +1,19 @@
+<script>
+    function tambahGuru() {
+        // Perform validation here (e.g., check if the required fields are filled)
+        var nip = document.getElementById('inputNanme4').value;
+        var nama = document.getElementById('inputEmail4').value;
+        var noTelepon = document.getElementById('inputnumber').value;
+        var jenisKelamin = document.getElementById('validationCustom04').value;
+
+        if (nip && nama && noTelepon && jenisKelamin) {
+            // Data is correct, perform further actions (e.g., submit the form or display success message)
+            alert('Data berhasil ditambahkan');
+            document.getElementById('guruForm').reset(); // Reset the form
+            $('#verticalycentered').modal('hide'); // Close the modal
+        } else {
+            // Data is incorrect, prompt the user to input again
+            alert('Mohon lengkapi semua data dengan benar.');
+        }
+    }
+</script>
